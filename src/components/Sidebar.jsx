@@ -5,7 +5,7 @@ export default function Sidebar() {
   const location = useLocation()
   const { name, letter } = location.state || { name: '', letter: '' }
   return (
-    <div className="w-64 flex flex-col items-center gap-12 bg-gray-200">
+    <div className="w-64 hidden md:flex flex-col items-center gap-12 bg-gray-200">
       <div className="container py-6 flex flex-col items-center gap-2">
         <div className='flex justify-center items-center text-[36px] border border-blue-400 text-white w-20 h-20 rounded-full bg-blue-200'>
           {letter}
